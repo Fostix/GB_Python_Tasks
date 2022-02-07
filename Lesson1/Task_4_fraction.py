@@ -2,4 +2,6 @@
 
 a = 1
 b = 7
-print(round(a / b, 1))
+c = a / b
+print(c)
+print(int(c * 10) % 10)

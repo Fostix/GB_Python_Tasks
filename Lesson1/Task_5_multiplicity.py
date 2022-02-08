@@ -4,22 +4,20 @@ from audioop import mul
 
 
 number = int(input('Enter number: '))
-multiplicity = 5
+multiplicity = 30
+result = 0
 
-for i in range(4):
-    if number % multiplicity == 0:
-        print
-
-    print(multiplicity)
-    if multiplicity < 15:
-        multiplicity += 5
+for i in range(3):
+    if multiplicity == 30:
+        if number % multiplicity == 0:
+            break
+        multiplicity /= 2
     else:
-        multiplicity *= 2
+        print(number / multiplicity)
+        result += 1
+        multiplicity -= 5
 
-
-
-
-
-
-
-
+if result == 2:
+    print('good')
+else:
+    print('bad')

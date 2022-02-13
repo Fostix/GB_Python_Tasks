@@ -1,7 +1,5 @@
 # Дано число. Проверить кратно ли оно 5 и 10 или 15 но не 30.
 
-from audioop import mul
-
 
 number = int(input('Enter number: '))
 multiplicity = 30
@@ -13,9 +11,11 @@ for i in range(3):
             break
         multiplicity /= 2
     else:
-        print(number / multiplicity)
-        result += 1
+        print(multiplicity % number)
+        if 0 == multiplicity % number:
+            result += 1
         multiplicity -= 5
+
 
 if result == 2:
     print('good')

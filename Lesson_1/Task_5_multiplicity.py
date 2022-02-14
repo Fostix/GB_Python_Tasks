@@ -11,7 +11,6 @@ for i in range(4):
             break
         multiplicity /= 2
     else:
-        print(multiplicity % number)
         if number % multiplicity == 0:
             result += 1
         multiplicity -= 5

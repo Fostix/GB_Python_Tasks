@@ -15,14 +15,14 @@ for i in number:
 
 print(sum)
 
-# for i in range(5):
+# for i in range(6):
 #     number = number * 10
 
 
 # print(number)
 
 
-# for i in range(5):
+# for i in range(6):
 #     sum += int(number % 10)
 #     number = number / 10
 

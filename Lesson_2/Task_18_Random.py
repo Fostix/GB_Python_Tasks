@@ -17,3 +17,4 @@ print(numbers)
 #     numbers[i], numbers[mixer] = numbers[mixer], numbers[i]
 
 # print(numbers)
+# принт мб изменит получаемый результат

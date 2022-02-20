@@ -1,20 +1,20 @@
 # Реализовать алгоритм перемешивания списка.
 
 
+from Lesson_2.my_random import my_rand as g
 import time, random
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-random.shuffle(numbers)
-print(numbers)
+# random.shuffle(numbers)
+# print(numbers)
 
+print(g)
 
 # for i in range(len(numbers)):
-#     mixer = str(time.time())
-#     mixer = int(mixer.replace('.', '')) % 100
-
+#     mixer = g
+#     time.sleep(0.000000001)
 #     while mixer > len(numbers) - 1:
 #         mixer //= 2
 #     numbers[i], numbers[mixer] = numbers[mixer], numbers[i]
 
-# print(numbers)
-# принт мб изменит получаемый результат
+#print(numbers)

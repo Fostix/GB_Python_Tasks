@@ -1,103 +1,106 @@
 <mxfile host="65bd71144e">
     <diagram id="jjHbtOa9dzXDZ9mio2m8" name="Page-1">
-        <mxGraphModel dx="1033" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1459" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="3" value="В заданном списке вещественных чисел найдите разницу между максимальным и минимальным значением дробной части элементов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="10" y="10" width="210" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-61" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4" target="m-ecCN-odloSf_-utHn2-60">
+                <mxCell id="m-ecCN-odloSf_-utHn2-61" value="" style="edgeStyle=none;html=1;" parent="1" source="4" target="m-ecCN-odloSf_-utHn2-60" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="490" y="10" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-63" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-60" target="m-ecCN-odloSf_-utHn2-62">
+                <mxCell id="5" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-60" target="m-ecCN-odloSf_-utHn2-69">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-60" value="numbers = []" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="490" y="150" width="120" height="60" as="geometry"/>
+                <mxCell id="m-ecCN-odloSf_-utHn2-60" value="numbers = []" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="120" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-65" value="True" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-62" target="m-ecCN-odloSf_-utHn2-64">
+                <mxCell id="m-ecCN-odloSf_-utHn2-65" value="True" style="edgeStyle=none;html=1;" parent="1" source="m-ecCN-odloSf_-utHn2-62" target="m-ecCN-odloSf_-utHn2-64" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-84" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-62" target="m-ecCN-odloSf_-utHn2-83">
+                <mxCell id="m-ecCN-odloSf_-utHn2-84" value="False" style="edgeStyle=none;html=1;" parent="1" source="m-ecCN-odloSf_-utHn2-62" target="m-ecCN-odloSf_-utHn2-83" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-62" value="i &amp;lt; numbers.Length" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-                    <mxGeometry x="490" y="280" width="120" height="80" as="geometry"/>
+                <mxCell id="m-ecCN-odloSf_-utHn2-62" value="i &amp;lt; numbers.Length" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="350" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-67" value="True" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-64" target="m-ecCN-odloSf_-utHn2-66">
+                <mxCell id="m-ecCN-odloSf_-utHn2-67" value="True" style="edgeStyle=none;html=1;" parent="1" source="m-ecCN-odloSf_-utHn2-64" target="m-ecCN-odloSf_-utHn2-66" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-78" value="False" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-64" target="m-ecCN-odloSf_-utHn2-71">
+                <mxCell id="m-ecCN-odloSf_-utHn2-78" value="False" style="edgeStyle=none;html=1;" parent="1" source="m-ecCN-odloSf_-utHn2-64" target="m-ecCN-odloSf_-utHn2-71" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-64" value="i &amp;gt; 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="510" y="440" width="80" height="80" as="geometry"/>
+                <mxCell id="m-ecCN-odloSf_-utHn2-64" value="i &amp;gt; 1" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="510" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-77" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-66" target="m-ecCN-odloSf_-utHn2-64">
+                <mxCell id="m-ecCN-odloSf_-utHn2-77" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="m-ecCN-odloSf_-utHn2-66" target="m-ecCN-odloSf_-utHn2-64" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="430" y="640"/>
-                            <mxPoint x="430" y="480"/>
+                            <mxPoint x="430" y="710"/>
+                            <mxPoint x="430" y="550"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-66" value="i -= 1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="490" y="610" width="120" height="60" as="geometry"/>
+                <mxCell id="m-ecCN-odloSf_-utHn2-66" value="i -= 1" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="680" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-69" value="min_number = i&lt;br&gt;max_number = i" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="320" y="100" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-73" value="True" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-71" target="m-ecCN-odloSf_-utHn2-72">
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-69" target="m-ecCN-odloSf_-utHn2-62">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-79" value="False" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-71" target="m-ecCN-odloSf_-utHn2-74">
+                <mxCell id="m-ecCN-odloSf_-utHn2-69" value="min_number = 0&lt;br&gt;max_number = 9" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="230" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-ecCN-odloSf_-utHn2-73" value="True" style="edgeStyle=none;html=1;" parent="1" source="m-ecCN-odloSf_-utHn2-71" target="m-ecCN-odloSf_-utHn2-72" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-71" value="max_number &amp;lt; i" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="680" y="440" width="140" height="80" as="geometry"/>
+                <mxCell id="m-ecCN-odloSf_-utHn2-79" value="False" style="edgeStyle=none;html=1;" parent="1" source="m-ecCN-odloSf_-utHn2-71" target="m-ecCN-odloSf_-utHn2-74" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-81" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-72">
+                <mxCell id="m-ecCN-odloSf_-utHn2-71" value="max_number &amp;lt; i" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="510" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-ecCN-odloSf_-utHn2-81" style="edgeStyle=none;html=1;" parent="1" source="m-ecCN-odloSf_-utHn2-72" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="840" y="480" as="targetPoint"/>
+                        <mxPoint x="840" y="550" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="840" y="640"/>
+                            <mxPoint x="840" y="710"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-72" value="max_number = i" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="690" y="610" width="120" height="60" as="geometry"/>
+                <mxCell id="m-ecCN-odloSf_-utHn2-72" value="max_number = i" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="680" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-76" value="True" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-74" target="m-ecCN-odloSf_-utHn2-75">
+                <mxCell id="m-ecCN-odloSf_-utHn2-76" value="True" style="edgeStyle=none;html=1;" parent="1" source="m-ecCN-odloSf_-utHn2-74" target="m-ecCN-odloSf_-utHn2-75" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-80" value="False" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-74" target="m-ecCN-odloSf_-utHn2-62">
+                <mxCell id="m-ecCN-odloSf_-utHn2-80" value="False" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="m-ecCN-odloSf_-utHn2-74" target="m-ecCN-odloSf_-utHn2-62" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="945" y="320"/>
+                            <mxPoint x="945" y="390"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-74" value="min_number &amp;gt; i" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="880" y="440" width="130" height="80" as="geometry"/>
+                <mxCell id="m-ecCN-odloSf_-utHn2-74" value="min_number &amp;gt; i" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="510" width="130" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-82" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m-ecCN-odloSf_-utHn2-75">
+                <mxCell id="m-ecCN-odloSf_-utHn2-82" style="edgeStyle=none;html=1;" parent="1" source="m-ecCN-odloSf_-utHn2-75" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="945" y="400" as="targetPoint"/>
+                        <mxPoint x="945" y="470" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1040" y="640"/>
-                            <mxPoint x="1040" y="400"/>
+                            <mxPoint x="1040" y="710"/>
+                            <mxPoint x="1040" y="470"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-75" value="min_number = i" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="885" y="610" width="120" height="60" as="geometry"/>
+                <mxCell id="m-ecCN-odloSf_-utHn2-75" value="min_number = i" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="885" y="680" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="m-ecCN-odloSf_-utHn2-83" value="print max_number - min_number" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
-                    <mxGeometry x="290" y="280" width="120" height="80" as="geometry"/>
+                <mxCell id="m-ecCN-odloSf_-utHn2-83" value="print max_number - min_number" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="350" width="120" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

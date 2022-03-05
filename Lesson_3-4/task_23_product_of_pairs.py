@@ -3,7 +3,6 @@
 # второй и предпоследний и т.д. 
 # Пример: [2, 3, 4, 5, 6] => [12, 15, 16]; [2, 3, 5, 6] => [12, 15]
 
-from itertools import product
 from fill_list import fill_method as fill
 
 numbers_length = int(input('Enter list length: '))

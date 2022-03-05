@@ -30,6 +30,3 @@ for i in range(len(text_list)):
 
 if never_count == 0:
     print("don't element")
-
-# останавливать ли поиск после нахождения одной копии?
-# в примерах вроде ошибка

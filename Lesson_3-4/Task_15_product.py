@@ -6,7 +6,6 @@
 
 numbers = [1]
 startNum = 2
-sum = 1
 
 for i in range(9):
     numbers.append(numbers[i] * startNum)
@@ -14,10 +13,3 @@ for i in range(9):
 
 print(numbers)
 
-
-# for i in range(9):
-#     sum = sum * startNum
-#     numbers.append(sum)
-#     startNum +=1
-
-# print(numbers)

@@ -14,8 +14,22 @@
 # res = filter(lambda x: not x%2, res)
 # res = list(map(lambda x:(x, x**2), res))
 # print(res)
-i = 15
+# i = 15
 
-while i < 10:
-    i += 1
-    print(i)
+# while i < 10:
+#     i += 1
+#     print(i)
+
+
+import turtle
+
+turtle.shape('turtle')
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(50)
+
+input()

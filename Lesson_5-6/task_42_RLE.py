@@ -22,27 +22,3 @@ print(temp)
 
 
 
-
-
-
-
-
-
-
-# text = 'hello fffffffffjjjjjjj'
-# temp = ''
-# col = 1
-
-# for i in range(len(text)):
-#     temp = text[i]
-#     if text[i] == text[i-1]:
-#         col +=1
-#         ##print(text[i])
-#     else:
-#         col = str(col)
-#         temp = temp.join(col)
-#         col = int(col)
-#         col = 1
-
-
-# print(temp)

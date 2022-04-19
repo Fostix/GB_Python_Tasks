@@ -10,11 +10,11 @@ def poly(k):
     return ' + '.join(a)
 
 def writer_file(what):
-    with open(r'D:\GitHub\Python practic\GB_Tasks\Lesson_5-6\files\task33.txt', 'a') as mr_writer:
+    with open(r'D:\GitHub\Python_practic\GB_Tasks\Lesson_5-6\files\task33.txt', 'a') as mr_writer:
         mr_writer.write(f'{g} = 0\n')
 
 
 
-g = poly(34)
+g = poly(2)
 print(f'{g} = 0')
 writer_file(g)

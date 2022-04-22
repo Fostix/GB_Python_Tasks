@@ -15,6 +15,6 @@ def writer_file(what):
 
 
 
-g = poly(2)
+g = poly(3)
 print(f'{g} = 0')
 writer_file(g)

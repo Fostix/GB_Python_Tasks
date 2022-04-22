@@ -5,7 +5,7 @@ def Polynomial(k):
     for i in range(0, k + 1):
         coeff = randint(0, 100)
         if i >= 2:
-            str.append(f"{coeff}*x^{i} + ")
+            str.append(f"{coeff}x^{i} + ")
         elif i == 1:
             str.append(f"x + ")
         elif i == 0:
@@ -16,6 +16,6 @@ def Polynomial(k):
         data.write(result + '\n')
     return result
     
-f = Polynomial(2)
+f = Polynomial(3)
 
 print(f)

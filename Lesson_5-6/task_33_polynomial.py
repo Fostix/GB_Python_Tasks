@@ -7,12 +7,15 @@ def Polynomial(k):
         if i >= 2:
             str.append(f"{coeff}*x^{i} + ")
         elif i == 1:
-            str.append(f"{coeff}*x + ")
+            str.append(f"x + ")
         elif i == 0:
             str.append(f"{coeff} = 0")
     stroka = str[::-1]
     result = ''.join(stroka)
     with open(r"D:\GitHub\Python_practic\GB_Tasks\Lesson_5-6\files\task33_2.txt", "a") as data:
         data.write(result + '\n')
+    return result
     
-Polynomial(2)
+f = Polynomial(2)
+
+print(f)

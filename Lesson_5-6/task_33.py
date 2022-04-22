@@ -6,7 +6,7 @@ import random as r
 
 def poly(k):
     coeffs = [r.randint(0,5) for x in range(k+1)]
-    a = [f'{coeff}x^{k - num}' for num, coeff in enumerate(coeffs) if coeff != 0 if num < k - 1] + [f'{coeff}x' for num, coeff in enumerate(coeffs) if coeff != 0 if num == k - 1] + [f'{coeff}' for num, coeff in enumerate(coeffs) if coeff != 0 if num > k - 1]
+    a = [f'{coeff}x^{k - num}' for num, coeff in enumerate(coeffs) if coeff > 1 if num < k - 1] + [f'{coeff}x' for num, coeff in enumerate(coeffs) if coeff > 1 if num == k - 1] + [f'x^{k - num}' for num, coeff in enumerate(coeffs) if coeff == 1 if num < k - 1] + [f'{coeff}' for num, coeff in enumerate(coeffs) if coeff > 1 if num > k - 1]
     return ' + '.join(a)
 
 def writer_file(what):

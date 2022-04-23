@@ -22,7 +22,6 @@ def open_2_polynomial_files():
 def make(polynomial):
     text = ''
     variable_polynomial = []
-    coefficient_polynomial = []
     i = 0
     while polynomial[i] != '=':
         if polynomial[i] != '+' and polynomial[i] != ' ':
@@ -32,14 +31,6 @@ def make(polynomial):
             text = ''
         i+=1
     return variable_polynomial
-
-
-
-
-
-
-
-
 
 
 
@@ -69,26 +60,34 @@ variable_polynomial = feel_list(equal_polynomial)
 
 
 
-# list_polynomial = []
-# text = ''
-# for i in variable_polynomial:
-#     i = i[::-1]
-#     print(i)
-#     for k in i:
-#         if k == '^':
-#             text = k
-#             continue
-#         if not k.isdigit():
-#             k
+list_polynomial = []
+coefficient_polylimial = []
+text = ''
+check = False
+for i in variable_polynomial:
+    if i.isdigit():
+        coefficient_polylimial.append(i)
+    for k in i:
+        if not k.isdigit() and not check:
+            check = True
+            text = k
+        if k.isdigit() or check:
+            text = k
+        else:
+            coefficient_polylimial.append(k) # or i ?
+    list_polynomial.append(text)
+    text = ''
+        # else:
+        #     list_polynomial.append(k)
 
         
 
-list_polynomial = []
-text = ''
-for i in range(variable_polynomial):
-    for k in i:
-        text = k.replace(k, '')
-        print(text)
+# list_polynomial = []
+# text = ''
+# for i in range(variable_polynomial):
+#     for k in i:
+#         text = k.replace(k, '')
+#         print(text)
         # if k.isdigit():
         #     text = k
 
@@ -111,7 +110,5 @@ for i in range(variable_polynomial):
 
 print(variable_polynomial)
 print(equal_polynomial)
-
-
-
-
+print(coefficient_polylimial)
+print(list_polynomial)

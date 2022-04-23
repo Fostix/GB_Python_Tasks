@@ -3,7 +3,7 @@
 
 
 
-from numpy import equal
+
 
 
 def open_2_polynomial_files():
@@ -16,6 +16,27 @@ def open_2_polynomial_files():
     equal_polynomial = first_polynomial.replace('=', '+')
     equal_polynomial = equal_polynomial.replace('0', second_polynomial)
     return equal_polynomial
+
+
+
+def make(polynomial):
+    text = ''
+    variable_polynomial = []
+    i = 0
+    while polynomial[i] != '=':
+        if polynomial[i] != '+' and polynomial[i] != ' ':
+            text += polynomial[i]
+        elif polynomial[i] == ' ' and text != '':
+            variable_polynomial.append(text)
+            text = ''
+        i+=1
+    return variable_polynomial
+
+
+
+
+
+
 
 
 
@@ -38,23 +59,56 @@ equal_polynomial = open_2_polynomial_files()
 variable_polynomial = feel_list(equal_polynomial)
 
 
+
+list_polynomial = []
+coefficient_polylimial = []
 text = ''
+check = False
 for i in variable_polynomial:
+    if i.isdigit():
+        coefficient_polylimial.append(i)
     for k in i:
-        if k.isdigit():
+        if not k.isdigit() and not check:
+            check = True
+            text = k
+        if k.isdigit() or check:
+            text = k
+        else:
+            coefficient_polylimial.append(k) # or i ?
+    list_polynomial.append(text)
+    text = ''
+        # else:
+        #     list_polynomial.append(k)
 
-            k.replace(i, '')
-            print(k)
-            text += k
+        
 
-    print(text)
+# list_polynomial = []
+# text = ''
+# for i in range(variable_polynomial):
+#     for k in i:
+#         text = k.replace(k, '')
+#         print(text)
+        # if k.isdigit():
+        #     text = k
+
+
+
+
+# text = ''
+# for i in variable_polynomial:
+#     for k in i:
+#         if k.isdigit():
+
+#             k.replace(i, '')
+#             print(k)
+#             text += k
+
+#     print(text)
 
 
 
 
 print(variable_polynomial)
 print(equal_polynomial)
-
-
-
-
+print(coefficient_polylimial)
+print(list_polynomial)

@@ -3,9 +3,6 @@
 
 
 
-
-
-
 def open_2_polynomial_files():
     with open(r'D:\GitHub\Python_practic\GB_Tasks\Lesson_5-6\files\task33.txt', 'r') as first_polynomial:
         first_polynomial = first_polynomial.readlines()[-1]
@@ -16,6 +13,7 @@ def open_2_polynomial_files():
     equal_polynomial = first_polynomial.replace('=', '+')
     equal_polynomial = equal_polynomial.replace('0', second_polynomial)
     return equal_polynomial
+
 
 
 
@@ -60,55 +58,46 @@ variable_polynomial = feel_list(equal_polynomial)
 
 
 
+
+
+
+
+
+
 list_polynomial = []
-coefficient_polylimial = []
-text = ''
+coefficient_polynomial = []
+text_pol = ''
+text_coef = ''
 check = False
-for i in variable_polynomial:
-    if i.isdigit():
-        coefficient_polylimial.append(i)
-    for k in i:
-        if not k.isdigit() and not check:
+for i in range(len(variable_polynomial)):
+    if variable_polynomial[i].isdigit():
+        coefficient_polynomial.append(variable_polynomial[i])
+        list_polynomial.append('')
+        continue
+    for k in variable_polynomial[i]:
+        print(k)
+        if k.isdigit() and not check:
+            text_coef += k
+        elif not k.isdigit() or not check:
             check = True
-            text = k
-        if k.isdigit() or check:
-            text = k
-        else:
-            coefficient_polylimial.append(k) # or i ?
-    list_polynomial.append(text)
-    text = ''
-        # else:
-        #     list_polynomial.append(k)
-
-        
-
-# list_polynomial = []
-# text = ''
-# for i in range(variable_polynomial):
-#     for k in i:
-#         text = k.replace(k, '')
-#         print(text)
-        # if k.isdigit():
-        #     text = k
+            text_pol += k
+        elif k.isdigit() and check:
+            text_pol += k
+    coefficient_polynomial.append(text_coef) # or i ?
+    list_polynomial.append(text_pol)
+    text_pol = ''
+    text_coef = ''
+    check = False
 
 
 
 
-# text = ''
-# for i in variable_polynomial:
-#     for k in i:
-#         if k.isdigit():
-
-#             k.replace(i, '')
-#             print(k)
-#             text += k
-
-#     print(text)
 
 
 
 
 print(variable_polynomial)
 print(equal_polynomial)
-print(coefficient_polylimial)
+print(coefficient_polynomial)
 print(list_polynomial)
+

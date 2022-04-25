@@ -3,9 +3,12 @@
 
 
 
+from numpy import equal
+
+
 def open_file(way_file):
     with open(way_file, 'r') as file_polynomial:
-        file_polynomial = file_polynomial.readlines()[-1]
+        file_polynomial = file_polynomial.readlines()[-1] # последняя строка
     return file_polynomial
 
 
@@ -29,8 +32,8 @@ def feel_list(polynomial):
 def function_shares_coefficients_and_polynomial(variable_polynomial):
     list_coefficient = []
     list_polynomial = []
-    text_pol = ''
     text_coef = ''
+    text_pol = ''
     check = False
     for i in range(len(variable_polynomial)):
         if variable_polynomial[i].isdigit():
@@ -49,8 +52,8 @@ def function_shares_coefficients_and_polynomial(variable_polynomial):
             text_coef = 0
         list_coefficient.append(text_coef)
         list_polynomial.append(text_pol)
-        text_pol = ''
         text_coef = ''
+        text_pol = ''
         check = False
     return list_coefficient, list_polynomial
         
@@ -87,8 +90,8 @@ def main():
     string_second_polynomial = open_file(way_second_file)
 
 
-    equal_polynomial = string_first_polynomial.replace('=', '+')
-    equal_polynomial = equal_polynomial.replace('0', string_second_polynomial)
+    equal_polynomial = string_first_polynomial.replace('= 0', string_second_polynomial)
+
 
 
     variable_polynomial = feel_list(equal_polynomial)
@@ -99,8 +102,6 @@ def main():
 
     coef_sum = sum_polynomial(list_coefficients, list_polynomial)
 
+    return coef_sum
 
-
-    print(coef_sum)
-
-main()
+print(main())

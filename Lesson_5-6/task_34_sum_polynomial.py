@@ -3,12 +3,12 @@
 
 
 
-from numpy import equal
+import random
 
 
 def open_file(way_file):
     with open(way_file, 'r') as file_polynomial:
-        file_polynomial = file_polynomial.readlines()[-1] # последняя строка
+        file_polynomial = file_polynomial.readlines()[random.randint(1, 51)] # последняя строка -1
     return file_polynomial
 
 
@@ -102,6 +102,15 @@ def main():
 
     coef_sum = sum_polynomial(list_coefficients, list_polynomial)
 
-    return coef_sum
 
-print(main())
+    text = ' + '.join(coef_sum)
+
+    text = '{};'.format(text)
+
+
+    with open(r'D:\GitHub\Python_practic\GB_Tasks\Lesson_5-6\files\task34_polynomial_sum.txt', 'a') as data:
+        data.write('{}\n'.format(text))
+
+
+main()
+

@@ -17,4 +17,4 @@ print(g)
 #         mixer //= 2
 #     numbers[i], numbers[mixer] = numbers[mixer], numbers[i]
 
-print(len(numbers))
+# print(len(numbers))
